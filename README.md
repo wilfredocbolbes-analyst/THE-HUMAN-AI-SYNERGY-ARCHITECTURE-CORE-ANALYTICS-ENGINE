@@ -76,3 +76,21 @@ ORDER BY net_profit DESC;
     quantity INT NOT NULL,
     selling_price DECIMAL(10, 2) NOT NULL
 );
+
+
+---
+
+## 🚀 4. CORE AUTOMATION LAYER (Python Integration)
+
+Para sa tunay na operasyon ng "AI bilang Utak", ang repository na ito ay may kasamang **`report_generator.py`**. Ang Python script na ito ay awtomatikong kumokonekta sa PostgreSQL database, pinatatakbo ang financial engine, at nagluluwa ng isang organisado at petsadong **Excel Financial Report** para sa management decision-making.
+
+### Tech Stack Used:
+* **Python 3**
+* **Pandas & OpenPyXL** (Data manipulation at Excel formatting)
+* **Psycopg2** (PostgreSQL database driver)
+
+---
+
+## 👥 CONTRIBUTORS
+
+* **Wilfredo Bolbes** — *Lead Systems Engineer & Operations Architect*
