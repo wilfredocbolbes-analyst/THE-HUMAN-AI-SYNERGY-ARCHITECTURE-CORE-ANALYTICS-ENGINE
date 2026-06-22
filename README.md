@@ -46,9 +46,6 @@ CREATE TABLE order_details (
     detail_id SERIAL PRIMARY KEY,
     order_id INT REFERENCES sales_orders(order_id),
     item_name VARCHAR(100),
-    quantity INT NOT NULL,
-    selling_price DECIMAL(10, 2) NOT NULL
-);
 
 SELECT 
     item_name, 
@@ -75,3 +72,7 @@ JOIN inventory_stocks inv ON od.item_name = inv.item_name
 GROUP BY od.item_name
 ORDER BY net_profit DESC;
 
+
+    quantity INT NOT NULL,
+    selling_price DECIMAL(10, 2) NOT NULL
+);
